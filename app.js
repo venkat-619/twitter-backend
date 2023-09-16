@@ -50,8 +50,8 @@ const tweet = require('./routes/tweet');
 
 
 // router middleware
-app.use('https://twitter-backend-murex.vercel.app/api/v1', user);
-app.use('https://twitter-backend-murex.vercel.app/api/v1', tweet);
+app.use('/api/v1', user);
+app.use('/api/v1', tweet);
 
 
 // export app js
