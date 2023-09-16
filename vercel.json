@@ -1,3 +1,8 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.js" }]
-}
+    "rewrites": [
+      {
+        "source": "/api/v1/:path*",
+        "destination": "https://twitter-backend-murex.vercel.app/:path*"
+      }
+    ]
+  }
