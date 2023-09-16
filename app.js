@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
     res.send('Hello From Backend!!!');
 });
 
-app.post("/test", (req, res) => {
+app.get("/test", (req, res) => {
     res.send('Hii test post route');
 });
 
