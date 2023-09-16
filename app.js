@@ -39,6 +39,10 @@ app.get("/", (req, res) => {
     res.send('Hello From Backend!!!');
 });
 
+app.post("/test", (req, res) => {
+    res.send('Hii test post route');
+});
+
 
 // import all routes here
 const user = require('./routes/user');
