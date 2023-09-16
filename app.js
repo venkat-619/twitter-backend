@@ -46,8 +46,8 @@ const tweet = require('./routes/tweet');
 
 
 // router middleware
-app.use('/', user);
-app.use('/', tweet);
+app.use('/api/v1', user);
+app.use('/api/v1', tweet);
 
 
 // export app js
