@@ -6,7 +6,7 @@ const cookieToken = (user, res) => {
             Date.now() + 3 * 24 * 60 * 60 * 1000
         ),
         secure: true,
-        SameSite: 'None',
+        sameSite: 'None',
         httpOnly: true
     };
 
