@@ -2,11 +2,12 @@ const cookieToken = (user, res) => {
     const token = user.getJwtToken();
 
     const options = {
-        Path: '/',
-        SameSite: 'Strict',
         expires: new Date( 
             Date.now() + 3 * 24 * 60 * 60 * 1000
         ),
+        secure: process.env.NODE_ENV === 'production',
+        Path: '/',
+        SameSite: 'Strict',
         httpOnly: true
     };
 
