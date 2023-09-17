@@ -5,9 +5,9 @@ const cookieToken = (user, res) => {
         expires: new Date( 
             Date.now() + 3 * 24 * 60 * 60 * 1000
         ),
-        secure: process.env.NODE_ENV === 'production',
+        secure: true,
         Path: '/',
-        SameSite: 'Strict',
+        SameSite: 'None',
         httpOnly: true
     };
 
