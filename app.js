@@ -28,7 +28,7 @@ app.use(fileUpload({
 // }));
 
 app.use(cors({
-    origin: 'https://twitter-clone-frontend-ebon.vercel.app/',
+    origin: 'https://twitter-clone-frontend-ebon.vercel.app',
     methods: ['POST', 'GET', 'PUT', 'DELETE'],
     credentials: true
 }));
